@@ -5,7 +5,7 @@ function getRandomHexColor() {
 }
 
 function createBoxes(amount) {
-  const boxesContainer = document.getElementById(`.boxes`);
+  const boxesContainer = document.getElementById(`boxes`);
   const fragment = document.createDocumentFragment();
 
   for (let i = 0; i < amount; i++) {
