@@ -5,6 +5,8 @@ function getRandomHexColor() {
 }
 
 function createBoxes(amount) {
+  destroyBoxes();
+
   const boxesContainer = document.getElementById(`boxes`);
   const fragment = document.createDocumentFragment();
 

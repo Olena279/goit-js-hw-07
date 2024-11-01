@@ -3,8 +3,10 @@ const outputName = document.getElementById(`name-output`);
 
 inputName.addEventListener(`input`, () => {
   const name = inputName.value.trim();
+
   if (name !== ``) {
+    outputName.textContent = `Hello, ${name}!`;
   } else {
-    outputName.textContent = `Hello, Anonymous!`;
+    outputName.textContent = `Anonymous!`;
   }
 });
